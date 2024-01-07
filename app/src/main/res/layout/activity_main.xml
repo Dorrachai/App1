@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Super Matte Spelet"
+        android:textSize="24sp" />
+
+    <!-- Question Block horizontal -->
+    <LinearLayout
+        android:id="@+id/question1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <!-- Question Text -->
+        <TextView
+            android:id="@+id/questionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3 + 3 = "
+            android:textSize="25dp"/>
+
+        <!-- Answer Options -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!-- ImageButton for Answer Option 1 -->
+            <ImageButton
+                android:id="@+id/answer3"
+                android:layout_width="77dp"
+                android:layout_height="73dp"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/answer4" />
+            <!-- ImageButton for Answer Option 2 -->
+
+            <ImageButton
+                android:id="@+id/answer4"
+                android:layout_width="77dp"
+                android:layout_height="73dp"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/answer3" />
+
+            <!-- ImageButton for Answer Option 3 -->
+            <ImageButton
+                android:id="@+id/answer6"
+                android:layout_width="77dp"
+                android:layout_height="73dp"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/answer6" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- TextView for response (Rätt svar! or Fel svar!)-->
+    <TextView
+        android:id="@+id/responseText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/holo_green_dark" />
+    <!-- Score Button and TextView-->
+    <Button
+        android:id="@+id/scoreButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/responseText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="158dp"
+        android:layout_marginEnd="161dp"
+        android:text="Visa Score" />
+
+</RelativeLayout>

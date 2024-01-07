@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">App1</string>
+    <string name="option1_description">Option 1</string>
+    <string name="option2_description">Option 2</string>
+    <string name="option3_description">Option 3</string>
+
+</resources>
